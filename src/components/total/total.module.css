@@ -1,0 +1,65 @@
+.totalStyles {
+    padding: 2rem 1.5rem;
+    padding-top: 0.5rem;
+    height: 90vh;
+    width: 65vw;
+    background: var(--color-background);
+    backdrop-filter: blur(4.5px);
+    border-radius: 32px;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+}
+
+.InnerLayout{
+    display: grid;
+    grid-template-columns: 32vw 32vw;
+    grid-template-rows: 60.8px auto;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    height: 100%;
+}
+.text {
+    grid-row: 1;
+}
+.Charts{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.ChartsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+.BarChart {
+    width: 90%;
+    height: 50%;
+}
+
+.DonutChart {
+    width: 90%;
+    height: 50%;
+}
+
+.second{
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.todo {
+    width: 85%;
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+    height: 100%;
+    overflow-y: auto;
+    max-height: 427px;
+}
+

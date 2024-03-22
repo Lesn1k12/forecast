@@ -1,0 +1,176 @@
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #28284f;
+  --color-primary: #6C9BCF;
+  --color-background: #f6f6f9;
+  /* Blue */
+  --color-primary-variant: #0056b3;
+  /* Darker Blue */
+  --color-accent: #ff4500;
+  /* Orange-Red */
+  --color-accent-variant: #cc3700;
+  /* Darker Orange-Red */
+  --color-white: #fff;
+  --color-light: rgba(132, 139, 200, 0.18);
+  /* dark */
+  --color-dark: #363949;
+ /*інше*/
+  --main-color: #8fb3dc;
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+
+  --color-danger: #FF0060;
+  --color-success: #1B9C85;
+  --color-warning: #F7D060;
+  --color-info-dark: #7d8da1;
+  --color-dark-variant: #677483;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+}
+
+[dark-mode="dark"] {
+  --color-background: #181a1e;
+  --color-white: #202528;
+  --color-dark: #ffffff;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+}
+  
+  .App {
+    text-align: center;
+  }
+  
+  .TodoWrapper {
+    background: var(--color-white);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .TodoForm {
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .todo-input {
+    outline: none;
+    background: none;
+    border: 1px solid #ff0000;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 300px;
+    color: #fff;
+    transition: border-color 0.3s ease-in-out;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .todoInput::placeholder {
+    color: #ffffff4d;
+  }
+  
+  .todoInput .error {
+    border-color: #ff4d4d;
+  }
+  
+  .errorMessage {
+    position: absolute;
+    bottom: -20px; 
+    left: 0;
+    color: #ff4d4d;
+    font-size: 0.8rem;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .todoInput.error, .errorMessage {
+    opacity: 1;
+  }
+  
+  .todoBtn {
+    background: #8758ff;
+    color: #fff;
+    border: none;
+    padding: 0.55rem;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.1s ease-in-out, transform 0.1s ease-in-out;
+  }
+  
+  .todoBtn:hover {
+    background: #6344c3;
+    transform: scale(1.03);
+  }
+  
+  .todoBtn:active {
+    transform: scale(0.95);
+  }
+  
+  .Todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #8758ff;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    transition: background 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .Todo:hover {
+    background: #6344c3;
+  }
+  
+  .fa-trash {
+    margin-left: 0.75rem;
+  }
+  
+  .incompleted {
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .completed {
+    color: #c5aeff;
+    text-decoration: line-through;
+    cursor: pointer;
+  }
+  
+  .edit-icon, .delete-icon {
+    cursor: pointer;
+  }
+  
+  .Todo p {
+    margin: 0;
+  }
+  
+  .Todo div > * {
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: color 0.1s ease-in-out, transform 0.1s ease-in-out;
+  }
+  
+  .Todo div > *:hover {
+    color: #c5aeff;
+    transform: scale(1.03);
+  }
+  
+  .Todo div > *:active {
+    transform: scale(0.95);
+  }

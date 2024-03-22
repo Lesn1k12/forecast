@@ -1,0 +1,54 @@
+.dataContainer {
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    padding-top: 0.5rem;
+    height: 90vh;
+    width: 65vw;
+    background: var(--color-background);
+    backdrop-filter: blur(4.5px);
+    border-radius: 32px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+}
+
+.styleContainer {
+    display: grid;
+    padding: 1rem;
+}
+
+.addDataForm{
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 0.3rem;
+}
+
+.addDataForm button {
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+}
+
+.dataTable {
+    grid-column: 2;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+.dataTable th, .dataTable td {
+    color: var(--color-dark);
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.ButtonActives button {
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+}

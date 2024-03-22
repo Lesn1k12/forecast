@@ -1,0 +1,37 @@
+
+  
+.FormStyled{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inputControl input{
+    width: 100%;
+}
+
+.selects{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.selects select{
+    color: rgba(34, 34, 96, 0.4);
+}
+.selects select:focus, .selects select:active{
+    color: rgb(236, 42, 8);
+}
+
+
+.submitBtn button{
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+}
+.submitBtn button:hover{
+    background: var(--color-green) !important;
+}
+
+.FormBtn {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+}
